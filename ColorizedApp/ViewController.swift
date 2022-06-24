@@ -8,12 +8,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var colorView: UIView!
+    
+    @IBOutlet var sliderRedColor: UISlider!
+    @IBOutlet var sliderGreenColor: UISlider!
+    @IBOutlet var sliderBlueColor: UISlider!
+    
+    @IBOutlet var redColorValue: UILabel!
+    @IBOutlet var greenColorValue: UILabel!
+    @IBOutlet var blueColorValue: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+        
+        sliderRedColor.minimumTrackTintColor = .red
+        sliderBlueColor.minimumTrackTintColor = .blue
+        sliderGreenColor.minimumTrackTintColor = .green
 
+    }
+    @IBAction func sliderAction(_ sender: UISlider) {
+
+        }
+        
+    
 
 }
 
