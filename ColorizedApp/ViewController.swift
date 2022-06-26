@@ -27,14 +27,13 @@ class ViewController: UIViewController {
         
     }
     @IBAction func sliderAction(_ sender: UISlider) {
-        let color = UIColor(
+        let backgroundColor = UIColor(
             red: CGFloat(sliderRedColor.value),
             green: CGFloat(sliderGreenColor.value),
             blue: CGFloat(sliderBlueColor.value),
             alpha: 1
         )
-        
-        colorView.backgroundColor = color
+        colorView.backgroundColor = backgroundColor
         
         switch sender.self {
         case sliderRedColor:
